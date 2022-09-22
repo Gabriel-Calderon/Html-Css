@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo video</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu servidor.</p>
+
+    <video width="500px" height="250px" src="videos/3264288893.mp4" controls ></video> <!--html5 vai sugerir assim, mas o jeito mais correto é o de baixo-->
+
+    <video  width="500px" height="250px" controls poster="fotos/luffy.jfif">
+        <source src="videos/3264288893.mp4" type="video/mp4">
+        <!--
+        <source src="videos/3264288893.m4v" type="video/mp4">
+        <source src="videos/3264288893.webm" type="video/webm">
+        <source src="videos/3264288893.ogv" type="video/ogg">
+        -->
+        <!--
+            No caso estes 3 codigos acima significa que caso o navegador não seja compativel com o primeiro formato de video
+            ele ira carregar de cima pra baixo até achar um que  seja compativel para mostrar para o usuario.
+            caso nem um dos formatos de video sejam compativeis ele ira mostrar a mensagem que esta escreita no 
+            paragrafo que esta escrito logo abaixo, e ira mostrar a opcao de fazer download do video.
+        -->
+        <p>Seu navegador não é compatível com os formatos de vídeos existentes.
+            <a href="#">clique aqui</a> para baixar.
+        </p>
+    </video>
+    <p><a href="ex003.html">Clique aqui</a> para ir para a página de videos que estão no nosso site, mas hospedados em outro servidor.</p>
+    <p>Voltar para a <a href="../9 - Inserindo áudio e vídeo/ex001.html">página da aula de como inserir áudios</a></p>
+    
+</body>
+</html>

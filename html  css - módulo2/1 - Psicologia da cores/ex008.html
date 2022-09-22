@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+            margin: 0px;
+        }
+
+        body>header {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        body>main {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        section>article {
+            background-color: lightgray;
+        }
+
+        article>aside {
+            background-color: rgb(253, 242, 242);
+        }
+
+        header>nav{
+            background-color: grey;
+            box-shadow: 3px 3px 5px 2px #00000073;
+        }
+
+        body>footer {
+            background-color: black;
+            text-align: center;
+            padding: 1px;
+            margin: 10px 0px 10px 0px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            margin: 20px;
+
+            
+        }
+
+        footer>.PgInicial {
+            border: none;
+            color: white;
+            text-align: none;
+            text-decoration: none;
+        }
+
+        .PgInicial:hover{
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Progamação, o futuro da humanidade</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Noticia sobre o mundo da programação</h2>
+                <p>Hoje em dia o mundo da programação está crescendo de forma exponencial, por isso as empresas estão
+                    valorizando os profissionais da área, pois a formação de programadores não está acompanhando o
+                    crescimento da área, causando assim, uma falta de mão de obra.</p>
+                <aside>Escrito por Gabriel dos Santos Calderon.</aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <a href="ex001.html" class="PgInicial">Página inicial</a>
+    </footer>
+
+</body>
+
+</html>

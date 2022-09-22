@@ -1,0 +1,73 @@
+bibliotecas reactnative
+
+@react-navigation/native
+
+---------------------------
+
+A biblioteca @react-navigation/native precisa de outras bibliotecas nativas para funcionar corretamente. 
+Por isso, vamos executar o comando do Código 2 e fazer as instalações necessárias.
+
+expo install react-native-gesture-handler react-native-reanimated react-native-screens 
+react-native-safe-area-context @react-native-community/masked-view
+expo install react-native-gesture-handler react-native-reanimated react-native-screens
+react-native-safe-area-context @react-native-community/masked-view
+
+
+----------------------------
+
+npm install @react-navigation/bottom-tabs
+----------------------------------------
+npm install @react-navigation/drawer
+Depois de instalar a biblioteca @react-navigation/drawer precisamos fazer uma alteração. 
+Abra o arquivo babel.config.js que fica salvo na pasta principal do projeto, a mesma pasta 
+onde o arquivo App.js está e cole o Código 2.
+
+module.exports = function(api) {
+  api.cache(true);
+  return {
+    presets: ['babel-preset-expo'],
+    plugins: ['react-native-reanimated/plugin'],
+  };
+};
+----------------------------------
+npm install @react-navigation/stack
+---------------------------
+utilização
+
+import React from "react";
+import { NavigationContainer } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+
+import TelaCorNormal from "./Componentes/TelaCorNormal/";
+import TelaCorInvertida from "./Componentes/TelaCorInvertida/";
+
+const Drawer = createDrawerNavigator();
+
+export default function App () {
+  return (
+    <NavigationContainer >
+      <Drawer.Navigator>
+        <Drawer.Screen name="Cores Normais" component = { TelaCorNormal } />
+        <Drawer.Screen name="Cores Invertidas" component = { TelaCorInvertida } />
+      </Drawer.Navigator>
+    </NavigationContainer>
+  )
+};
+----------------
+
+Veja no Código 1 um componente que possui um botão que abre o menu lateral ao ser pressionado.
+
+import React from 'react';
+import { Button, View } from 'react-native';
+
+export default function TelaHome (props) {
+  return (
+    <View>
+        <Button
+            title = "Abrir menu"
+            onPress = { ( ) => { props.navigation.openDrawer( ) } }
+        />
+    </View>
+  );
+}
+----------------------------------------

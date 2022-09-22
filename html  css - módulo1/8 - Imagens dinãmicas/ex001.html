@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptação de imagens</title>
+</head>
+<body>
+    <h1>Imagens que se adaptam sozinhas ao site.</h1>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/img-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-M.png" type="image/png">
+        <img src="imagens/img-G.png" alt="grande">
+
+        <!--A ordem importa quando se refere a adaptação e exibição de imagens.
+        sempre deve colocar dentro da tag picture... os srcset nao funcionam com ctrl + espaço, tem que digitar o nome certinho de qual pasta a imagem se encontra
+        não devemos esquecer tbm que em type , depois da barra deve colocar a extenção da imagem, neste nosso caso é png, max-width : 1050px
+    significa que abaixo disso a imagem que sera aberta é a media-->
+    </picture>
+</body>
+</html>

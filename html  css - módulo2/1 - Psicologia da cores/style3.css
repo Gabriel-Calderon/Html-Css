@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+#Tprincipal{
+
+    background-color:#9DE5ED ;
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.sub{
+    background-color: #7eb8be5b;
+    width: 300px;
+    border-radius: 4px;
+}

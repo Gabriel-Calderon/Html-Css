@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+*{
+    margin: 0px;
+}
+header {
+    height: 100px;
+    text-align: center;
+    background-color: red;
+}
+
+header h1 {
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.74);
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+
+nav.menu {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+a.LinksMenu {
+    color: black;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-left: 10px;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+main {
+    color: green;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+}
+
+main article {
+    text-align: center;
+    padding-top: 20px;
+}
+
+main div.galeria {
+    background-color: white;
+    width: 196px;
+    margin-left: 800px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+}
+
+div.Tgaleria {
+    color: blue;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: blue;
+}

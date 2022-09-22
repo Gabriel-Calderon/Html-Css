@@ -1,0 +1,8 @@
+Git / GitHub
+------------
+
+repositório local é onde guardo meus projetos no meu pc
+no caso é o git e repositório remoto é onde guardo meus 
+projetos prontos e posso hospedar meus sites e projetos
+de qualquer linguagem no caso é o github e github posso 
+trabalhar em equipe.

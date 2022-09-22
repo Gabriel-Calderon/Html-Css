@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo áudio e vídeo</title>
+</head>
+<body>
+    <h1>Painho vai inserir áudio e vídeo</h1>
+    <p>Se liga neste beat que o painho delas tudo vai tocar agora</p>
+    <audio src="style gunna.mp3" controls autoplay></audio> <!--Desse jeito da pra fazer, mas o mais
+    recomendado é o que esta embaixo-->
+
+    <audio preload="metadata" controls autoplay loop> 
+        <source src="style gunna.mp3" type="audio/mp3">
+        <source src="style gunna.mp3" type="audio/ogg">
+        <source src="style gunna.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não é compatível com
+            os formatos de áudio existentes. <a href="link">Clique aqui</a> para fazer o download.
+        </p>
+    </audio>
+    <!--preload='metadata' irá abrir primeiro as informações do audio
+    controls: irá mostrar os controles, play, pause, voltar, volume, enfim.
+    autoplay: irá fazer com que conseguimor dar play
+    loop: quando o audio chegar ao fim tocará novamente
+    type: significa que de cima pra baixo, o navegador vai tentando ver
+    com qual formato de audio é compativel e por ultimo se nao for compativel
+    ira mostrar um link para fazer download do audio.s-->
+    <p>Infelizmente seu navegador não é compatível com
+        os formatos de áudio existentes. <a href="link">Clique aqui</a> para fazer o download.
+    </p> <!--Nao precisava botar esse paragrafo aqui, mas coloquei para fins de entendimento.-->
+    <p>Acesse á <a href="ex002.html">página 2</a> que é referente á aula de inserir videos hospedados localmente.</p>
+    
+
+    
+</body>
+</html>
