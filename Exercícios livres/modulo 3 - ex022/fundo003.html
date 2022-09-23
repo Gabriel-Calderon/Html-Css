@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centralizando uma imagem</title>
+    <style>
+        body {
+            position: relative;
+            height: 98vh; /*controla a altura*/
+            background-image: url('imagens/target001.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left center;
+            background-attachment: fixed; /*controla se a imagem ira se mover ou ficar fixa no fundo da tela*/
+            background-color: red;
+
+        }
+
+        #imgpq{
+            background-color: yellow;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%); /*rotaciona a imgagem*/
+        }
+    </style>
+</head>
+<body>
+    <div id="imgpq">
+        <img src="Imagens/target001.png" alt="">
+    </div>
+</body>
+</html>
