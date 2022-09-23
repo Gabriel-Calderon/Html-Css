@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2? family= Fira+Sans:wght@200 & family= Roboto:ital,wght@1,100 & display=swap');
+
+    body {
+        font-family: 'Fira Sans', sans-serif; ;
+    }
+    table {
+        border: 2px solid red;
+        border-collapse: collapse;
+        padding: 10px;
+        position: relative; /* PRECISO FAZER ISSO PRA DEIXAR O CABEÇALHO FIXO EM CIMA DA TABELA NA HORA QUE ROLAR O SITE PRA BAIXO*/
+    }
+
+    thead {
+        background-color: rgb(196, 97, 97);
+    }
+
+    thead > tr > th {
+        position: sticky; /* significa colavel/grudavel*/
+        top: -1px; /*pra colar em cima com distancia de -1px do topo do site*/
+        background-color: rgb(196, 97, 97) ; /* pra colar o background junto com aletra*/
+
+    }
+
+    /*tbody > tr:nth-child(2n) */
+    /* pseudoclass que faz o efeito zebrado e 2n signica que a cada 2 ela colocara background no ultimo para dar o efeito desejado*/
+    /*mas fica melhor dentro do parenteses (odd) que é impar em ingles
+    ou (even) que é par*/
+
+    tbody > tr:nth-child(odd) { /* (2n-1)*/
+        background-color: darkgrey;
+    }
+    tbody > tr:nth-child(even) { /* (2n) */
+        background-color: aqua;
+    }
+   
+
+    td,
+    th {
+        border: 2px solid black;
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+</style>
+
+<body>
+    <table>
+        <caption>Minhas viajens</caption>
+        <thead>
+            <tr>
+                <th scope="col">Paises que quero viajar</th><!--scope col é pra informar que é um titulo que se refere a coluna abaixo-->
+                <th scope="col">Estados dos paises</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Grecia</td>
+                <td>ilha de creta</td>
+            </tr>
+            <tr>
+                <td>Itália</td>
+                <td>Roma</td>
+            </tr>
+            <tr>
+                <td>Estados Unidos</td>
+                <td>Nova York</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+
+                        <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>França</td>
+                <td>Paris</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de estados</th> <!--scope row é pra informar que é um titulo que se refere a linha do lado-->
+                <td><strong>30</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat, repudiandae temporibus eum nemo consequuntur! Velit natus voluptatibus corrupti dolorem dolorum magni distinctio inventore? Autem ut cum quibusdam praesentium in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid animi nam hic quasi delectus earum totam odit! Blanditiis at nam reiciendis ducimus quisquam commodi ea sapiente quas, dignissimos fugit dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolorum autem, accusantium fugit quibusdam aperiam ab magni enim nisi voluptatum fuga dolorem. Illum vitae nihil temporibus eveniet quos ullam necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque exercitationem dignissimos id aspernatur corrupti dicta molestiae accusamus culpa expedita! Magni suscipit possimus dolores sint, animi fugiat ratione harum nihil.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat, repudiandae temporibus eum nemo consequuntur! Velit natus voluptatibus corrupti dolorem dolorum magni distinctio inventore? Autem ut cum quibusdam praesentium in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid animi nam hic quasi delectus earum totam odit! Blanditiis at nam reiciendis ducimus quisquam commodi ea sapiente quas, dignissimos fugit dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolorum autem, accusantium fugit quibusdam aperiam ab magni enim nisi voluptatum fuga dolorem. Illum vitae nihil temporibus eveniet quos ullam necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque exercitationem dignissimos id aspernatur corrupti dicta molestiae accusamus culpa expedita! Magni suscipit possimus dolores sint, animi fugiat ratione harum nihil.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat, repudiandae temporibus eum nemo consequuntur! Velit natus voluptatibus corrupti dolorem dolorum magni distinctio inventore? Autem ut cum quibusdam praesentium in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid animi nam hic quasi delectus earum totam odit! Blanditiis at nam reiciendis ducimus quisquam commodi ea sapiente quas, dignissimos fugit dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolorum autem, accusantium fugit quibusdam aperiam ab magni enim nisi voluptatum fuga dolorem. Illum vitae nihil temporibus eveniet quos ullam necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque exercitationem dignissimos id aspernatur corrupti dicta molestiae accusamus culpa expedita! Magni suscipit possimus dolores sint, animi fugiat ratione harum nihil.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat, repudiandae temporibus eum nemo consequuntur! Velit natus voluptatibus corrupti dolorem dolorum magni distinctio inventore? Autem ut cum quibusdam praesentium in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid animi nam hic quasi delectus earum totam odit! Blanditiis at nam reiciendis ducimus quisquam commodi ea sapiente quas, dignissimos fugit dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolorum autem, accusantium fugit quibusdam aperiam ab magni enim nisi voluptatum fuga dolorem. Illum vitae nihil temporibus eveniet quos ullam necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque exercitationem dignissimos id aspernatur corrupti dicta molestiae accusamus culpa expedita! Magni suscipit possimus dolores sint, animi fugiat ratione harum nihil.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat, repudiandae temporibus eum nemo consequuntur! Velit natus voluptatibus corrupti dolorem dolorum magni distinctio inventore? Autem ut cum quibusdam praesentium in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid animi nam hic quasi delectus earum totam odit! Blanditiis at nam reiciendis ducimus quisquam commodi ea sapiente quas, dignissimos fugit dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolorum autem, accusantium fugit quibusdam aperiam ab magni enim nisi voluptatum fuga dolorem. Illum vitae nihil temporibus eveniet quos ullam necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque exercitationem dignissimos id aspernatur corrupti dicta molestiae accusamus culpa expedita! Magni suscipit possimus dolores sint, animi fugiat ratione harum nihil.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat, repudiandae temporibus eum nemo consequuntur! Velit natus voluptatibus corrupti dolorem dolorum magni distinctio inventore? Autem ut cum quibusdam praesentium in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid animi nam hic quasi delectus earum totam odit! Blanditiis at nam reiciendis ducimus quisquam commodi ea sapiente quas, dignissimos fugit dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolorum autem, accusantium fugit quibusdam aperiam ab magni enim nisi voluptatum fuga dolorem. Illum vitae nihil temporibus eveniet quos ullam necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque exercitationem dignissimos id aspernatur corrupti dicta molestiae accusamus culpa expedita! Magni suscipit possimus dolores sint, animi fugiat ratione harum nihil.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat, repudiandae temporibus eum nemo consequuntur! Velit natus voluptatibus corrupti dolorem dolorum magni distinctio inventore? Autem ut cum quibusdam praesentium in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid animi nam hic quasi delectus earum totam odit! Blanditiis at nam reiciendis ducimus quisquam commodi ea sapiente quas, dignissimos fugit dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolorum autem, accusantium fugit quibusdam aperiam ab magni enim nisi voluptatum fuga dolorem. Illum vitae nihil temporibus eveniet quos ullam necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque exercitationem dignissimos id aspernatur corrupti dicta molestiae accusamus culpa expedita! Magni suscipit possimus dolores sint, animi fugiat ratione harum nihil.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat, repudiandae temporibus eum nemo consequuntur! Velit natus voluptatibus corrupti dolorem dolorum magni distinctio inventore? Autem ut cum quibusdam praesentium in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid animi nam hic quasi delectus earum totam odit! Blanditiis at nam reiciendis ducimus quisquam commodi ea sapiente quas, dignissimos fugit dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolorum autem, accusantium fugit quibusdam aperiam ab magni enim nisi voluptatum fuga dolorem. Illum vitae nihil temporibus eveniet quos ullam necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque exercitationem dignissimos id aspernatur corrupti dicta molestiae accusamus culpa expedita! Magni suscipit possimus dolores sint, animi fugiat ratione harum nihil.</p>
+
+</body>
+
+</html>
