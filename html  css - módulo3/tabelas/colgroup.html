@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coolgroup</title>
+</head>
+
+<style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        
+    
+
+    table {
+        border-collapse: collapse;
+    }
+
+    caption {
+        padding: 10px;
+        font-weight: bold;
+    }
+
+
+    th,td {
+        border: 1px solid black;
+        padding: 15px;
+    }
+
+    col.zebra {
+        background-color: rgba(255, 255, 0, 0.473);
+    }
+
+    col.zebrado {
+        background-color: rgba(255, 0, 0, 0.623);
+    }
+
+</style>
+
+<body>
+
+    <table>
+        <colgroup>
+            <col class="zebrado">
+            <col class="zebra">
+            <col class="zebrado">
+            <col class="zebra" span="2">
+            </colgroup>
+        <caption>Cardápio de lanches</caption>
+        <thead>
+            <tr>
+                <th scope="col">Lanches</th>
+                <th scope="col">Alaminutas</th>
+                <th scope="col">Pizzas</th>
+                <th scope="col">Porções</th>
+                <th scope="col">Pastéis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>X-Carne</td>
+                <td>Ala-Carne</td>
+                <td>4 queijos</td>
+                <td>Frango a moda da casa</td>
+                <td>Chocolate</td>
+            </tr>
+            <tr>
+                <td>X-Frango</td>
+                <td>Ala-Frangro</td>
+                <td>Coração</td>
+                <td>Tulipa c/ Polenta</td>
+                <td>Romeu e julieta</td>
+            </tr>
+            <tr>
+                <td>X-Calabresa</td>
+                <td>Ala-Peixe</td>
+                <td>Strogonoff</td>
+                <td>Torre de batata</td>
+                <td>Fricassê</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
